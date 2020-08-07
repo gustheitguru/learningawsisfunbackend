@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Learning AWS is FUN!</title>
+<link rel="stylesheet" href="public/style.css" type="text/css" >
+</head>
+<body>
+
+<h1>Learning AWS is Fun</h1>
+<p>Add terms and Definitions for flash cards on this page</p>
+
+<a href="flashcards.html">Flash Cards</a>
+<br>
+<br>
+<a href="index.html">Home</a>
+<br>
+<br>
+<form action="/api/addterms/add" method="post">
+	<h3>Add Terms</h3>
+  	<p><code>POST /api/addterms/add</code></p>
+    
+    <input id="topic" type="text" name="topic" placeholder="Topic*">
+    <br>
+    <input id="term" type="text" name="term" placeholder="Term*">
+    <br>
+    <textarea id="def" type="text" name="def" placeholder="Definitions*"></textarea>
+	<br>
+    <input type="submit" value="Submit">
+</form>
+<br>
+<br>
+<br>
+<form action='/api/terms/get' method='get'>
+	<h3>See All Terms and Definitions</h3>
+  	<p><code>Get /api/terms/get</code></p>
+	<input type="submit" value="Submit">
+</form>
+<br>
+<br>
+<h3 id='display'>test</h3>
+
+
+</body>
+</html>
